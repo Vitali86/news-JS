@@ -1,5 +1,7 @@
 class Loader {
-    constructor(baseLink, options) {
+    private baseLink: string;
+    private options: Record<string, any>;
+    constructor(baseLink: string, options: Record<string, any>) {
         this.baseLink = baseLink;
         this.options = options;
     }
